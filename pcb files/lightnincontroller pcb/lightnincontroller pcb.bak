@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4310 1610 1230 990 
+S 4210 1980 1230 990 
 U 5BA79AAB
 F0 "controller" 50
 F1 "controller.sch" 50
 $EndSheet
+Text Notes 4250 1620 0    50   Italic 10
+RX en TX op speciaale I2c to UART chip\n
 $EndSCHEMATC

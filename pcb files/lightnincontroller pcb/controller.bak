@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Halfgelijders:PIC32MX170F256B-I_SP U?
-U 1 1 5BC35CAF
-P 3960 3560
-F 0 "U?" H 6110 6425 50  0000 C CNN
-F 1 "PIC32MX170F256B-I_SP" H 6110 6334 50  0000 C CNN
-F 2 "SeeedOPL-IC-2016:DIP28-2.54-34.7X7.62MM" H 3960 3560 50  0001 C CNN
-F 3 "" H 3960 3560 50  0001 C CNN
-	1    3960 3560
-	1    0    0    -1  
-$EndComp
 Text HLabel 3220 1860 0    50   Input ~ 0
 SCL
 Text HLabel 3230 1710 0    50   Input ~ 0
@@ -301,4 +290,97 @@ F 3 "" H 8460 2360 50  0001 C CNN
 	1    8460 2360
 	0    1    1    0   
 $EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BC8CECC
+P 2970 5040
+F 0 "#PWR?" H 2970 4890 50  0001 C CNN
+F 1 "+3V3" H 2985 5213 50  0000 C CNN
+F 2 "" H 2970 5040 50  0001 C CNN
+F 3 "" H 2970 5040 50  0001 C CNN
+	1    2970 5040
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BC8CEE7
+P 3070 5270
+F 0 "C?" H 3162 5270 50  0000 L CNN
+F 1 "C_Small" H 3162 5225 50  0001 L CNN
+F 2 "" H 3070 5270 50  0001 C CNN
+F 3 "~" H 3070 5270 50  0001 C CNN
+	1    3070 5270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BC8CF7B
+P 2870 5280
+F 0 "C?" H 3030 5270 50  0000 R CNN
+F 1 "C_Small" H 2778 5235 50  0001 R CNN
+F 2 "" H 2870 5280 50  0001 C CNN
+F 3 "~" H 2870 5280 50  0001 C CNN
+	1    2870 5280
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2870 5180 2870 5040
+Wire Wire Line
+	2870 5040 2970 5040
+Wire Wire Line
+	3070 5170 3070 5040
+Wire Wire Line
+	3070 5370 3070 5620
+Wire Wire Line
+	2870 5620 2970 5620
+Wire Wire Line
+	2870 5380 2870 5620
+Connection ~ 2970 5040
+Wire Wire Line
+	2970 5040 3070 5040
+$Comp
+L power:GND #PWR?
+U 1 1 5BC8E9CD
+P 2970 5620
+F 0 "#PWR?" H 2970 5370 50  0001 C CNN
+F 1 "GND" H 2975 5447 50  0000 C CNN
+F 2 "" H 2970 5620 50  0001 C CNN
+F 3 "" H 2970 5620 50  0001 C CNN
+	1    2970 5620
+	1    0    0    -1  
+$EndComp
+Connection ~ 2970 5620
+Wire Wire Line
+	2970 5620 3070 5620
+Text HLabel 8460 1310 2    50   Input ~ 0
+PhotoCel
+NoConn ~ 3760 1110
+NoConn ~ 3760 1260
+NoConn ~ 3760 2460
+NoConn ~ 3760 2610
+NoConn ~ 3760 2910
+$Comp
+L Halfgelijders:PIC32MX170F256B-I_SP U?
+U 1 1 5BC35CAF
+P 3960 3560
+F 0 "U?" H 6110 6425 50  0000 C CNN
+F 1 "PIC32MX170F256B-I_SP" H 6110 6334 50  0000 C CNN
+F 2 "SeeedOPL-IC-2016:DIP28-2.54-34.7X7.62MM" H 3960 3560 50  0001 C CNN
+F 3 "" H 3960 3560 50  0001 C CNN
+	1    3960 3560
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4780 -15560
+Text Notes 4040 660  0    50   ~ 0
+TX en RX op aparte I2C to uart chip\n
+Text HLabel 8460 1460 2    50   Input ~ 0
+CH_PD
+Text HLabel 8460 1610 2    50   Input ~ 0
+GPIO2
+Text HLabel 8460 1760 2    50   Input ~ 0
+RST
+Text HLabel 8460 1910 2    50   Input ~ 0
+GPIO0
+Text Notes 2990 -470 0    50   ~ 0
+TX en RX op aparte I2C to uart chip\n
 $EndSCHEMATC
