@@ -14,8 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 4250 1620 0    50   Italic 10
-RX en TX op speciaale I2c to UART chip\n
 $Sheet
 S 3960 2080 1400 2280
 U 5BA79AAB
@@ -101,7 +99,7 @@ F8 "SDA" I R 2180 2220 50
 F9 "RESET" I R 2180 2380 50 
 $EndSheet
 Wire Wire Line
-	2180 2150 3920 2150
+	2180 2150 2380 2150
 Wire Wire Line
 	3920 2150 3920 2190
 Wire Wire Line
@@ -141,17 +139,33 @@ Wire Wire Line
 Wire Wire Line
 	2300 2750 3960 2750
 Wire Wire Line
-	2180 2220 3910 2220
-Wire Wire Line
 	3910 2220 3910 2260
 Wire Wire Line
 	3910 2260 3960 2260
 Wire Wire Line
 	2180 2650 3940 2650
 $Sheet
-S 840  1120 1260 850 
+S 1090 1280 510  540 
 U 5BD55925
 F0 "Sheet5BD55924" 0
 F1 "RTC.sch" 50
+F2 "SCL" I R 1600 1550 50 
+F3 "SDA" I R 1600 1640 50 
 $EndSheet
+Wire Wire Line
+	2380 1550 2380 2150
+Connection ~ 2380 2150
+Wire Wire Line
+	2380 2150 3920 2150
+Wire Wire Line
+	1600 1550 2380 1550
+Wire Wire Line
+	2180 2220 2300 2220
+Wire Wire Line
+	1600 1640 2300 1640
+Wire Wire Line
+	2300 1640 2300 2220
+Connection ~ 2300 2220
+Wire Wire Line
+	2300 2220 3910 2220
 $EndSCHEMATC
