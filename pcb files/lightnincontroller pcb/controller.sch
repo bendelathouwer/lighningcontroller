@@ -4,10 +4,10 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 4
 Title ""
-Date ""
-Rev ""
+Date "2018-10-27"
+Rev "V0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -356,20 +356,7 @@ Text HLabel 8460 1310 2    50   Input ~ 0
 PhotoCel
 NoConn ~ 3760 1110
 NoConn ~ 3760 1260
-NoConn ~ 3760 2460
-NoConn ~ 3760 2610
 NoConn ~ 3760 2910
-$Comp
-L Halfgelijders:PIC32MX170F256B-I_SP U?
-U 1 1 5BC35CAF
-P 3960 3560
-F 0 "U?" H 6110 6425 50  0000 C CNN
-F 1 "PIC32MX170F256B-I_SP" H 6110 6334 50  0000 C CNN
-F 2 "SeeedOPL-IC-2016:DIP28-2.54-34.7X7.62MM" H 3960 3560 50  0001 C CNN
-F 3 "" H 3960 3560 50  0001 C CNN
-	1    3960 3560
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4780 -15560
 Text Notes 4040 660  0    50   ~ 0
 TX en RX op aparte I2C to uart chip\n
@@ -383,4 +370,23 @@ Text HLabel 8460 1910 2    50   Input ~ 0
 GPIO0
 Text Notes 2990 -470 0    50   ~ 0
 TX en RX op aparte I2C to uart chip\n
+Wire Wire Line
+	3760 2460 3570 2460
+Text HLabel 3570 2460 0    50   Input ~ 0
+~IRQ
+Wire Wire Line
+	3760 2610 3550 2610
+Text HLabel 3550 2610 0    50   Input ~ 0
+RESET
+$Comp
+L Halfgelijders:PIC32MX170F256B-I_SP U?
+U 1 1 5BC35CAF
+P 3960 3560
+F 0 "U?" H 6110 6425 50  0000 C CNN
+F 1 "PIC32MX170F256B-I_SP" H 6110 6334 50  0000 C CNN
+F 2 "SeeedOPL-IC-2016:DIP28-2.54-34.7X7.62MM" H 3960 3560 50  0001 C CNN
+F 3 "" H 3960 3560 50  0001 C CNN
+	1    3960 3560
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
