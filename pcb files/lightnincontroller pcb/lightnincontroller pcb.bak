@@ -17,7 +17,7 @@ $EndDescr
 $Sheet
 S 6830 2530 1400 2280
 U 5BA79AAB
-F0 "Sheet5BA79AAB" 0
+F0 "controller" 79
 F1 "controller.sch" 79
 F2 "SCL" I L 6830 2640 50 
 F3 "SDA" I L 6830 2710 50 
@@ -89,7 +89,7 @@ Wire Wire Line
 $Sheet
 S 3630 2540 1420 700 
 U 5BCCFC94
-F0 "Sheet5BCCFC93" 0
+F0 "ESP8266" 50
 F1 "ESP8266.sch" 50
 F2 "GPIO_0" I R 5050 3170 50 
 F3 "RTS" I R 5050 2920 50 
@@ -100,8 +100,6 @@ F7 "SCL" I R 5050 2600 50
 F8 "SDA" I R 5050 2670 50 
 F9 "RESET" I R 5050 2830 50 
 $EndSheet
-Wire Wire Line
-	5050 2600 5250 2600
 Wire Wire Line
 	6790 2600 6790 2640
 Wire Wire Line
@@ -147,33 +145,9 @@ Wire Wire Line
 Wire Wire Line
 	5050 3100 6810 3100
 $Sheet
-S 3960 1730 510  540 
-U 5BD55925
-F0 "Sheet5BD55924" 0
-F1 "RTC.sch" 50
-F2 "SCL" I R 4470 2000 50 
-F3 "SDA" I R 4470 2090 50 
-$EndSheet
-Wire Wire Line
-	5250 2000 5250 2600
-Connection ~ 5250 2600
-Wire Wire Line
-	5250 2600 6790 2600
-Wire Wire Line
-	4470 2000 5250 2000
-Wire Wire Line
-	5050 2670 5170 2670
-Wire Wire Line
-	4470 2090 5170 2090
-Wire Wire Line
-	5170 2090 5170 2670
-Connection ~ 5170 2670
-Wire Wire Line
-	5170 2670 6780 2670
-$Sheet
 S 8540 3350 1060 610 
 U 5BD4F2FD
-F0 "Sheet5BD4F2FC" 0
+F0 "NEOPIX" 50
 F1 "NEOPIX.sch" 50
 F2 "NEOPIX_in" I L 8540 3640 50 
 F3 "NEOPIX_out" I R 9600 3650 50 
@@ -191,4 +165,14 @@ F2 "DI" I L 9740 3650 50
 $EndSheet
 Wire Wire Line
 	9600 3650 9740 3650
+Wire Wire Line
+	5050 2600 6790 2600
+Wire Wire Line
+	5050 2670 6780 2670
+$Sheet
+S 1620 2730 720  440 
+U 5C1941A3
+F0 "voeding " 50
+F1 "voeding.sch" 50
+$EndSheet
 $EndSCHEMATC

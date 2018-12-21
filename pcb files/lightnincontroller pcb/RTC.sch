@@ -202,7 +202,6 @@ $EndComp
 Connection ~ 5270 4530
 Wire Wire Line
 	5270 4530 5580 4530
-NoConn ~ 2770 4630
 $Comp
 L power:+BATT #PWR0138
 U 1 1 5BD4AAA8
@@ -325,4 +324,19 @@ Wire Wire Line
 Wire Wire Line
 	1700 5590 1610 5590
 Connection ~ 1610 5590
+$Comp
+L Connector:Test_Point TP9
+U 1 1 5BFE88D7
+P 2440 4570
+F 0 "TP9" H 2498 4690 50  0000 L CNN
+F 1 "Test_Point" H 2440 4770 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2640 4570 50  0001 C CNN
+F 3 "~" H 2640 4570 50  0001 C CNN
+	1    2440 4570
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2770 4630 2440 4630
+Wire Wire Line
+	2440 4630 2440 4570
 $EndSCHEMATC

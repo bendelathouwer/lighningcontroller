@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -62,7 +62,7 @@ F 3 "" H 2980 3770 50  0001 C CNN
 	1    2980 3770
 	1    0    0    -1  
 $EndComp
-Text HLabel 3160 3420 2    50   Input ~ 0
+Text HLabel 3710 3420 2    50   Input ~ 0
 DI
 $Comp
 L Device:C C17
@@ -126,4 +126,17 @@ $EndComp
 Connection ~ 2350 5200
 Wire Wire Line
 	2350 5200 2560 5200
+$Comp
+L Device:R R7
+U 1 1 5C1BF96F
+P 3310 3420
+F 0 "R7" V 3103 3420 50  0000 C CNN
+F 1 "R" V 3194 3420 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3240 3420 50  0001 C CNN
+F 3 "~" H 3310 3420 50  0001 C CNN
+	1    3310 3420
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3460 3420 3710 3420
 $EndSCHEMATC
