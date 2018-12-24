@@ -62,7 +62,7 @@ F 3 "" H 2980 3770 50  0001 C CNN
 	1    2980 3770
 	1    0    0    -1  
 $EndComp
-Text HLabel 3160 3420 2    50   Input ~ 0
+Text HLabel 3710 3420 2    50   Input ~ 0
 DI
 $Comp
 L Device:C C17
@@ -126,4 +126,50 @@ $EndComp
 Connection ~ 2350 5200
 Wire Wire Line
 	2350 5200 2560 5200
+$Comp
+L Device:R R7
+U 1 1 5C1BF96F
+P 3310 3420
+F 0 "R7" V 3103 3420 50  0000 C CNN
+F 1 "R" V 3194 3420 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3240 3420 50  0001 C CNN
+F 3 "~" H 3310 3420 50  0001 C CNN
+	1    3310 3420
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3460 3420 3710 3420
+$Comp
+L Device:C C13
+U 1 1 5C1FC75F
+P 3300 5550
+F 0 "C13" H 3185 5504 50  0000 R CNN
+F 1 "C" H 3185 5595 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 3338 5400 50  0001 C CNN
+F 3 "~" H 3300 5550 50  0001 C CNN
+	1    3300 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5C1FC797
+P 3300 5400
+F 0 "#PWR01" H 3300 5250 50  0001 C CNN
+F 1 "VCC" H 3317 5573 50  0000 C CNN
+F 2 "" H 3300 5400 50  0001 C CNN
+F 3 "" H 3300 5400 50  0001 C CNN
+	1    3300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C1FC7CF
+P 3300 5700
+F 0 "#PWR02" H 3300 5450 50  0001 C CNN
+F 1 "GND" H 3305 5527 50  0000 C CNN
+F 2 "" H 3300 5700 50  0001 C CNN
+F 3 "" H 3300 5700 50  0001 C CNN
+	1    3300 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

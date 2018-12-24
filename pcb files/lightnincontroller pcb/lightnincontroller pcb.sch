@@ -29,7 +29,6 @@ F8 "GPIO0" I L 6830 3200 50
 F9 "RESET" I L 6830 2870 50 
 F10 "~IRQ_ESP" I L 6830 2790 50 
 F11 "NEOPIX_OUT1" I R 8230 3650 50 
-F12 "DISPIRQ" I L 6830 3430 50 
 $EndSheet
 $Comp
 L power:+3.3V #PWR0101
@@ -159,7 +158,7 @@ Wire Wire Line
 $Sheet
 S 9740 3330 1000 660 
 U 5BFAE0EC
-F0 "Sheet5BFAE0EB" 0
+F0 "Neopixel" 50
 F1 "Neopixels.sch" 50
 F2 "DI" I L 9740 3650 50 
 $EndSheet
@@ -170,9 +169,23 @@ Wire Wire Line
 Wire Wire Line
 	5050 2670 6780 2670
 $Sheet
-S 1620 2730 720  440 
+S 7460 5500 3270 910 
 U 5C1941A3
 F0 "voeding " 50
 F1 "voeding.sch" 50
 $EndSheet
+Wire Notes Line
+	8150 5500 8150 4810
+Wire Notes Line
+	8150 4810 8090 4870
+Wire Notes Line
+	8150 4810 8210 4870
+Wire Notes Line
+	10600 5500 10590 4010
+Wire Notes Line
+	10590 4010 10560 4050
+Wire Notes Line
+	10590 4010 10620 4050
+Text Notes 5790 1490 0    197  Italic 39
+\nTO-DO\nComponnenten waardes geven
 $EndSCHEMATC

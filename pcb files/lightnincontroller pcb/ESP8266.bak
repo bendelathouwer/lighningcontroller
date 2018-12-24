@@ -69,22 +69,14 @@ $EndComp
 Wire Wire Line
 	1650 3690 1960 3690
 Wire Wire Line
-	1650 3490 2040 3490
-Wire Wire Line
-	1650 3390 2050 3390
-Wire Wire Line
-	1650 3290 2050 3290
-Wire Wire Line
-	1650 3190 2050 3190
-Wire Wire Line
 	1650 2990 2040 2990
-Text HLabel 2050 3190 2    50   Input ~ 0
+Text HLabel 2640 3190 2    50   Input ~ 0
 GPIO_0
-Text HLabel 2050 3290 2    50   Input ~ 0
+Text HLabel 2650 3290 2    50   Input ~ 0
 RTS
-Text HLabel 2050 3390 2    50   Input ~ 0
+Text HLabel 2650 3390 2    50   Input ~ 0
 GPIO2
-Text HLabel 2040 3490 2    50   Input ~ 0
+Text HLabel 2650 3490 2    50   Input ~ 0
 CH_PD
 Text Label 2040 2990 2    50   ~ 0
 RX
@@ -522,4 +514,74 @@ Wire Wire Line
 Wire Wire Line
 	1280 4640 1170 4640
 Connection ~ 1170 4640
+Wire Wire Line
+	1650 3190 2270 3190
+Wire Wire Line
+	1650 3290 2380 3290
+Wire Wire Line
+	1650 3390 2460 3390
+Wire Wire Line
+	1650 3490 2570 3490
+$Comp
+L Connector:Test_Point TP7
+U 1 1 5C203D35
+P 2270 3190
+F 0 "TP7" V 2270 3370 50  0000 L CNN
+F 1 "Test_Point" H 2328 3219 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2470 3190 50  0001 C CNN
+F 3 "~" H 2470 3190 50  0001 C CNN
+	1    2270 3190
+	1    0    0    -1  
+$EndComp
+Connection ~ 2270 3190
+Wire Wire Line
+	2270 3190 2640 3190
+$Comp
+L Connector:Test_Point TP8
+U 1 1 5C203E2E
+P 2380 3030
+F 0 "TP8" V 2380 3210 50  0000 L CNN
+F 1 "Test_Point" H 2438 3059 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2580 3030 50  0001 C CNN
+F 3 "~" H 2580 3030 50  0001 C CNN
+	1    2380 3030
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Test_Point TP9
+U 1 1 5C203F6C
+P 2460 2870
+F 0 "TP9" V 2460 3050 50  0000 L CNN
+F 1 "Test_Point" H 2518 2899 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2660 2870 50  0001 C CNN
+F 3 "~" H 2660 2870 50  0001 C CNN
+	1    2460 2870
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Test_Point TP10
+U 1 1 5C20407F
+P 2570 2780
+F 0 "TP10" V 2570 2960 50  0000 L CNN
+F 1 "Test_Point" H 2628 2809 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2770 2780 50  0001 C CNN
+F 3 "~" H 2770 2780 50  0001 C CNN
+	1    2570 2780
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2380 3030 2380 3290
+Connection ~ 2380 3290
+Wire Wire Line
+	2380 3290 2650 3290
+Wire Wire Line
+	2460 3390 2460 2870
+Connection ~ 2460 3390
+Wire Wire Line
+	2460 3390 2650 3390
+Wire Wire Line
+	2570 2780 2570 3490
+Connection ~ 2570 3490
+Wire Wire Line
+	2570 3490 2650 3490
 $EndSCHEMATC

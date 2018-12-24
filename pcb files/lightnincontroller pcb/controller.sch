@@ -47,7 +47,7 @@ U 1 1 5BC8829D
 P 1160 4220
 F 0 "con1" H 1329 4485 50  0000 C CNN
 F 1 "icsp" H 1329 4394 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x04_P2.54mm_Vertical" H 1160 4220 50  0001 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical" H 1160 4220 50  0001 C CNN
 F 3 "" H 1160 4220 50  0001 C CNN
 	1    1160 4220
 	-1   0    0    -1  
@@ -58,7 +58,7 @@ U 1 1 5BC888B7
 P 1480 2440
 F 0 "Y1" V 1434 2571 50  0000 L CNN
 F 1 "Crystal" V 1525 2571 50  0000 L CNN
-F 2 "Crystal:Crystal_HC33-U_Vertical" H 1480 2440 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-U_Horizontal" H 1480 2440 50  0001 C CNN
 F 3 "~" H 1480 2440 50  0001 C CNN
 	1    1480 2440
 	0    1    1    0   
@@ -388,4 +388,9 @@ F 3 "" H 3960 3560 50  0001 C CNN
 $EndComp
 Text HLabel 8460 2060 2    50   Input ~ 0
 NEOPIX_OUT1
+NoConn ~ 3760 2910
+NoConn ~ 8460 2510
+NoConn ~ 8460 2660
+NoConn ~ 8460 2810
+NoConn ~ 8460 2960
 $EndSCHEMATC
