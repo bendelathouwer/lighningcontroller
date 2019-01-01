@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5C194791
-P 2310 3100
-F 0 "J1" V 2290 2890 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" V 2390 3070 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2310 3100 50  0001 C CNN
-F 3 "~" H 2310 3100 50  0001 C CNN
-	1    2310 3100
+P 1850 3110
+F 0 "J1" V 1830 2900 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" V 1930 3080 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1850 3110 50  0001 C CNN
+F 3 "~" H 1850 3110 50  0001 C CNN
+	1    1850 3110
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -52,8 +52,6 @@ $EndComp
 Connection ~ 2880 3000
 Wire Wire Line
 	2880 3000 3440 3000
-Wire Wire Line
-	2510 3100 2880 3100
 Wire Wire Line
 	2880 3100 2880 3340
 $Comp
@@ -248,4 +246,86 @@ F 3 "" H 4870 5050 50  0001 C CNN
 	1    4870 5050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Barrel_Jack J2
+U 1 1 5C28AB96
+P 1420 4050
+F 0 "J2" H 1498 4375 50  0000 C CNN
+F 1 "Barrel_Jack" H 1498 4284 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1470 4010 50  0001 C CNN
+F 3 "~" H 1470 4010 50  0001 C CNN
+	1    1420 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5C28AC5F
+P 1980 4180
+F 0 "#PWR0132" H 1980 3930 50  0001 C CNN
+F 1 "GND" H 1985 4007 50  0000 C CNN
+F 2 "" H 1980 4180 50  0001 C CNN
+F 3 "" H 1980 4180 50  0001 C CNN
+	1    1980 4180
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1720 3950 2010 3950
+Wire Wire Line
+	1720 4050 1980 4050
+Wire Wire Line
+	1980 4050 1980 4150
+Wire Wire Line
+	1720 4150 1980 4150
+Connection ~ 1980 4150
+Wire Wire Line
+	1980 4150 1980 4180
+$Comp
+L Diode:1N4004 D2
+U 1 1 5C28C362
+P 2360 3000
+F 0 "D2" H 2360 2784 50  0000 C CNN
+F 1 "1N4004" H 2360 2875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2360 2825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2360 3000 50  0001 C CNN
+	1    2360 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 3010 2160 3010
+Wire Wire Line
+	2160 3010 2160 3000
+Wire Wire Line
+	2160 3000 2210 3000
+Wire Wire Line
+	2050 3110 2470 3110
+Wire Wire Line
+	2470 3110 2470 3100
+Wire Wire Line
+	2470 3100 2880 3100
+$Comp
+L power:VCC #PWR013
+U 1 1 5C28CD78
+P 2460 3870
+F 0 "#PWR013" H 2460 3720 50  0001 C CNN
+F 1 "VCC" H 2477 4043 50  0000 C CNN
+F 2 "" H 2460 3870 50  0001 C CNN
+F 3 "" H 2460 3870 50  0001 C CNN
+	1    2460 3870
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4004 D1
+U 1 1 5C28CCCC
+P 2160 3950
+F 0 "D1" H 2160 3734 50  0000 C CNN
+F 1 "1N4004" H 2160 3825 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2160 3775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2160 3950 50  0001 C CNN
+	1    2160 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2310 3950 2460 3950
+Wire Wire Line
+	2460 3950 2460 3870
 $EndSCHEMATC

@@ -58,7 +58,7 @@ U 1 1 5BC888B7
 P 1480 2440
 F 0 "Y1" V 1434 2571 50  0000 L CNN
 F 1 "Crystal" V 1525 2571 50  0000 L CNN
-F 2 "Crystal:Crystal_HC33-U_Vertical" H 1480 2440 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 1480 2440 50  0001 C CNN
 F 3 "~" H 1480 2440 50  0001 C CNN
 	1    1480 2440
 	0    1    1    0   
